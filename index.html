@@ -6,24 +6,26 @@
 </head>
 <h1>Кто играет?</h1>
 <div id="pick-players" style="margin-bottom: 30px">
-<button onclick="addPlayer('Ряба')">Ряба</button>
-<button onclick="addPlayer('Анкл')">Анкл</button>
-<button onclick="addPlayer('Леха')">Леха</button>
-<button onclick="addPlayer('Шкаф')">Шкаф</button>
-<button onclick="addPlayer('Пикресс')">Пикрес</button>
-<button onclick="addPlayer('Вадя')">Вадя</button>
-<button onclick="addPlayer('Саня')">Саня</button>
-<button onclick="addPlayer('Снаке')">Снаке</button>
-<button onclick="addPlayer('Фами')">Фами</button>
-<button onclick="addPlayer('Семен')">Семен</button>
-<button onclick="addPlayer('Вова')">Вова</button>
-<button onclick="addPlayer('Кавун')">Кавун</button>
-<button onclick="addPlayer('Чепов')">Чепов</button>
-<button onclick="addPlayer('Димас')">Димас</button>
+<button onclick="addPlayerWithButton('Ряба')">Ряба</button>
+<button onclick="addPlayerWithButton('Анкл')">Анкл</button>
+<button onclick="addPlayerWithButton('Леха')">Леха</button>
+<button onclick="addPlayerWithButton('Шкаф')">Шкаф</button>
+<button onclick="addPlayerWithButton('Пикресс')">Пикрес</button>
+<button onclick="addPlayerWithButton('Вадя')">Вадя</button>
+<button onclick="addPlayerWithButton('Саня')">Саня</button>
+<button onclick="addPlayerWithButton('Снаке')">Снаке</button>
+<button onclick="addPlayerWithButton('Фами')">Фами</button>
+<button onclick="addPlayerWithButton('Семен')">Семен</button>
+<button onclick="addPlayerWithButton('Чепов')">Чепов</button>
+<button onclick="addPlayerWithButton('Димас')">Димас</button>
+<input placeholder="Добавить еще кого-то" id="addPlayerInput"><button onclick="addPlayerWithInput()">Добавить</button>
 </div>
 <div id="all-players" style="margin-bottom: 20px;word-spacing: 10px">
     <div id="player"></div>
 </div>
+<div id="game" style="display: none;margin-bottom: 20px;" >Во что играем?</div>
+<div id="game-pick"></div>
+<div id="picked-game"style="margin-bottom: 20px;"></div>
 <div id="generate-team"></div>
 <div id="TeamA" style="margin-top: 20px;word-spacing: 10px"></div>
 <div id="TeamB" style="margin-top: 20px;word-spacing: 10px"></div>
